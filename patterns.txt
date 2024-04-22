@@ -1,0 +1,168 @@
+n = int(input())
+for row in range(1, n + 1):
+   for star in range(row):
+       print("*", end = "")
+   print()
+
+output:
+*
+**
+***
+****
+*****
+
+
+n = int(input())
+for row in range(1, n + 1):
+   for col in range(1, row + 1):
+       print(col, end = "")
+   print()
+
+output:
+1
+12
+123
+1234
+12345
+
+
+n = int(input())
+for row in range(n):
+   for col in range(n):
+       print("*", end = "")
+   print()
+
+output:
+*****
+*****
+*****
+*****
+*****
+
+
+n = int(input())
+for row in range(n, 0, -1):
+   for star in range(row):
+       print("*", end = "")
+   print()
+
+output:
+*****
+****
+***
+**
+*
+
+
+n = int(input())
+spaces = n - 1
+stars = 1
+for row in range(1, n + 1):
+   for space in range(spaces):
+       print(" ", end = "")
+      
+   spaces -= 1
+  
+   for star in range(stars):
+       print("*", end = "")
+   stars += 1
+   print()
+
+output:
+    *
+   **
+  ***
+ ****
+*****
+
+
+n = int(input())
+spaces = 0
+for row in range(n, 0, -1):
+   for space in range(spaces):
+       print(" ", end = "")
+      
+   spaces += 1
+  
+   for star in range(2 * row - 1):
+       print("*", end = "")
+   print()
+
+output:
+*********
+ *******
+  *****
+   ***
+    *
+
+
+
+n = int(input())
+val = 10
+for i in range(1, n + 1):
+   for j in range(i):
+       print(val, end = " ")
+       val += 10
+   print()
+
+output:
+10 
+20 30 
+40 50 60 
+70 80 90 100 
+110 120 130 140 150 
+
+
+n = int(input())
+for i in range(1, n + 1):
+   for j in range(i):
+       if i % 2 == 0:
+           print("#", end = "")
+       else:
+           print("*", end = "")
+   print()
+
+output:
+*
+##
+***
+####
+*****
+
+
+n = int(input())
+spaces = 0
+for i in range(n, 0, -1):
+   for j in range(spaces):
+       print(" ", end = " ")
+   spaces += 1
+   for j in range(2 * i - 1):
+       print("*", end = " ")
+   print()
+
+output:
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+
+
+n = int(input())
+spaces = 0
+for i in range(n, 0, -1):
+  for j in range(spaces):
+      print(" ",  end = " ")
+  spaces += 1
+  letter = 65
+  for j in range(i):
+      print(chr(letter), end = " ")
+      letter += 1
+  print()
+
+output:
+A B C D E 
+  A B C D 
+    A B C 
+      A B 
+        A 
