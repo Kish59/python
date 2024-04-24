@@ -1,0 +1,16 @@
+print("starting line")
+try:
+    a=10/5
+except:
+    print("some exception raised")
+else:
+    print("no exception raised, everything worked perfecctly")
+finally:
+    print("this is a final block")
+print("outside try block")
+
+output:
+starting line
+no exception raised, everything worked perfecctly
+this is a final block
+outside try block
