@@ -1,0 +1,66 @@
+#source code
+word=input()
+print(word)
+
+store=dict()
+print(store)
+store['p']=23
+store['q']="abcd"
+store['w']=22
+store[12]=11
+store["hello"]=222
+print(store)
+
+allkeys=store.keys()
+print(allkeys)
+
+for ele in allkeys:
+    print(ele,store[ele])
+
+input:
+python
+
+output:
+python
+{}
+{'p': 23, 'q': 'abcd', 'w': 22, 12: 11, 'hello': 222}
+dict_keys(['p', 'q', 'w', 12, 'hello'])
+p 23
+q abcd
+w 22
+12 11
+hello 222
+
+#source code
+word=input()
+print(word)
+store=dict()
+for ch in word:
+    if ch in store:
+        store[ch]=store[ch]+1
+    else:
+        store[ch]=1
+print(store)
+
+resultchar='#'
+resultfrequency=0
+allkeys=store.keys()
+for ele in allkeys:
+    if store[ele] > resultfrequency:
+        resultfrequency=store[ele]
+        resultchar=ele
+
+print(resultchar,resultfrequency)
+
+input:
+jkjlkqlwlkhhdhg
+
+output:
+jkjlkqlwlkhhdhg
+{'j': 2, 'k': 3, 'l': 3, 'q': 1, 'w': 1, 'h': 3, 'd': 1, 'g': 1}
+k 3
+
+
+
+
+
