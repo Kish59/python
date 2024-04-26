@@ -1,0 +1,31 @@
+word=input()
+print(word)
+
+store=dict()
+print(store)
+store['p']=23
+store['q']="abcd"
+store['w']=22
+store[12]=11
+store["hello"]=222
+print(store)
+
+allkeys=store.keys()
+print(allkeys)
+
+for ele in allkeys:
+    print(ele,store[ele])
+
+input:
+python
+
+output:
+python
+{}
+{'p': 23, 'q': 'abcd', 'w': 22, 12: 11, 'hello': 222}
+dict_keys(['p', 'q', 'w', 12, 'hello'])
+p 23
+q abcd
+w 22
+12 11
+hello 222
